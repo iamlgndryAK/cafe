@@ -128,5 +128,5 @@ def delete_post(cafe_id):
     database.session.commit()
     return redirect(url_for('home'))
 
-
-app.run(debug=False, host="0.0.0.0")
+if __name__ == "__main__":
+    app.run(debug=True)
